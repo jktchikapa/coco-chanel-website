@@ -1,0 +1,190 @@
+/* ========================================== 
+             Variables
+========================================== */
+
+:root {
+  /* === COULEURS DE FOND === */
+  --bs-body-bg: #000000;
+  --bs-bg-1: #000000;
+  --bs-bg-2: #17191b;
+  --bs-bg-3: #1e2023;
+  --bs-bg-hero: #050506;
+  --bs-bg-glass: rgba(255, 255, 255, 0.04);
+  --bs-body-alt: #ffffff;
+  --footer-background: #ffffffff;
+
+  /* === COULEURS DE TEXTE === */
+  --bs-body-color: #fcfeff;
+  --bs-: #cfd3da;
+  --bs-text-secondary: #8e949d;
+  --bs-text-disabled: #5f6369;
+  --bs-text-alt: #000000;
+
+  /* === COULEURS D’ACCENT – OR === */
+  --bs-gold: #c8aa6e;
+  --bs-gold-light: #e0c98d;
+  --bs-gold-dark: #9e864f;
+  --bs-gold-muted: #85785d;
+  --bs-gold-glow: 0 0 22px rgba(200, 170, 110, 0.4);
+  --bs-gold--alt: #c8aa6e;
+
+  /* === BORDURES === */
+  --bs-border-color: #222428;
+  --bs-border-light: #2f3136;
+  --bs-border-strong: #3c3e44;
+  --bs-border-faint: rgba(255, 255, 255, 0.06);
+
+  /* === LIGNES ET SÉPARATEURS === */
+  --bs-line-1: #323436;
+  --bs-line-2: #242527;
+  --bs-line-3: #1a1b1d;
+  --bs-line-4: #121314;
+
+  /* === OMBRES === */
+  --bs-shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.12);
+  --bs-shadow-md: 0 4px 20px rgba(0, 0, 0, 0.25);
+  --bs-shadow-lg: 0 8px 36px rgba(0, 0, 0, 0.4);
+  --bs-shadow-blue: 0 0 22px rgba(75, 140, 255, 0.3);
+  --bs-shadow-gold: 0 0 22px rgba(200, 170, 110, 0.4);
+
+  /* === OVERLAYS === */
+  --bs-overlay-dark: rgba(0, 0, 0, 0.85);
+  --bs-overlay-light: rgba(255, 255, 255, 0.04);
+
+  /* === ESPACEMENTS === */
+  --bs-space-xxs: 0.25rem;
+  --bs-space-xs: 0.5rem;
+  --bs-space-sm: 1rem;
+  --bs-space-md: 1.5rem;
+  --bs-space-lg: 2rem;
+  --bs-space-xl: 3rem;
+
+  /* === COINS ARRONDIS === */
+  --bs-radius-sm: 0.25rem;
+  --bs-radius-md: 0.5rem;
+  --bs-radius-lg: 1rem;
+
+  /* === TYPOGRAPHIE === */
+  --bs-font-sans: "Helvetica Neue", Arial, sans-serif;
+  --bs-font-serif: "Georgia", serif;
+  --bs-font-heading: "Playfair Display", serif;
+
+  /* Tailles de texte  */
+  --bs-font-size-xs: 0.75rem;
+  --bs-font-size-sm: 0.875rem;
+  --bs-font-size-md: 1rem;
+  --bs-font-size-lg: 1.25rem;
+  --bs-font-size-xl: 2rem;
+  --bs-font-size-xxl: 3rem;
+
+  /* Interlignes  */
+  --bs-line-height-tight: 1.2;
+  --bs-line-height-md: 1.5;
+  --bs-line-height-lg: 1.8;
+
+  /* === TRANSITIONS === */
+  --bs-transition-fast: 0.15s ease-in-out;
+  --bs-transition-base: 0.3s ease;
+  --bs-transition-slow: 0.6s ease;
+
+  /* === Z-INDEX === */
+  --bs-z-nav: 1000;
+  --bs-z-modal: 1050;
+  --bs-z-overlay: 1100;
+  --bs-z-tooltip: 1200;
+}
+
+/* ========================================== 
+  THÈME CLAIR
+========================================== */
+
+[data-theme="light"] {
+  /* === COULEURS DE FOND === */
+  --bs-body-bg: #ffffff;
+  --bs-bg-1: #000000;
+  --bs-bg-2: #e8eaed;
+  --bs-bg-3: #dfe2e6;
+  --bs-body-alt: #ffffff;
+  --bs-bg-hero: #fafbfc;
+  --bs-bg-glass: rgba(0, 0, 0, 0.03);
+  --footer-background: #000000;
+
+  /* === COULEURS DE TEXTE === */
+  --bs-body-color: #000000;
+  --bs-: #5a6169;
+  --bs-text-secondary: #7a8289;
+  --bs-text-disabled: #a0a6ac;
+
+  /* === COULEURS D'ACCENT – OR === */
+  --bs-gold: #ac9255;
+  --bs-gold-light: #e5c488;
+  --bs-gold-dark: #b8954e;
+  --bs-gold-muted: #9c8560;
+  --bs-gold-glow: 0 0 20px rgba(212, 175, 106, 0.3);
+  --bs-gold--alt: #c1a774;
+
+  /* === BORDURES === */
+  --bs-border-color: #d5d8db;
+  --bs-border-light: #c8cbd0;
+  --bs-border-strong: #b5b9be;
+  --bs-border-faint: rgba(0, 0, 0, 0.06);
+
+  /* === LIGNES ET SÉPARATEURS === */
+  --bs-line-1: #cdd0d4;
+  --bs-line-2: #d8dbe0;
+  --bs-line-3: #e3e5e8;
+  --bs-line-4: #edeef1;
+
+  /* === OMBRES === */
+  --bs-shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
+  --bs-shadow-md: 0 4px 20px rgba(0, 0, 0, 0.12);
+  --bs-shadow-lg: 0 8px 36px rgba(0, 0, 0, 0.15);
+  --bs-shadow-blue: 0 0 22px rgba(90, 158, 255, 0.25);
+  --bs-shadow-gold: 0 0 22px rgba(212, 175, 106, 0.3);
+
+  /* === OVERLAYS === */
+  --bs-overlay-dark: rgba(255, 255, 255, 0.85);
+  --bs-overlay-light: rgba(0, 0, 0, 0.03);
+
+  /* === ESPACEMENTS === */
+  --bs-space-xxs: 0.25rem;
+  --bs-space-xs: 0.5rem;
+  --bs-space-sm: 1rem;
+  --bs-space-md: 1.5rem;
+  --bs-space-lg: 2rem;
+  --bs-space-xl: 3rem;
+
+  /* === COINS ARRONDIS === */
+  --bs-radius-sm: 0.25rem;
+  --bs-radius-md: 0.5rem;
+  --bs-radius-lg: 1rem;
+
+  /* === TYPOGRAPHIE === */
+  --bs-font-sans: "Helvetica Neue", Arial, sans-serif;
+  --bs-font-serif: "Georgia", serif;
+  --bs-font-heading: "Playfair Display", serif;
+
+  /* Tailles de texte */
+  --bs-font-size-xs: 0.75rem;
+  --bs-font-size-sm: 0.875rem;
+  --bs-font-size-md: 1rem;
+  --bs-font-size-lg: 1.25rem;
+  --bs-font-size-xl: 2rem;
+  --bs-font-size-xxl: 3rem;
+
+  /* Interlignes */
+  --bs-line-height-tight: 1.2;
+  --bs-line-height-md: 1.5;
+  --bs-line-height-lg: 1.8;
+
+  /* === TRANSITIONS === */
+  --bs-transition-fast: 0.15s ease-in-out;
+  --bs-transition-base: 0.3s ease;
+  --bs-transition-slow: 0.6s ease;
+
+  /* === Z-INDEX === */
+  --bs-z-nav: 1000;
+  --bs-z-modal: 1050;
+  --bs-z-overlay: 1100;
+  --bs-z-tooltip: 1200;
+}

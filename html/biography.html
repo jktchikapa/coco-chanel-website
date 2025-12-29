@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Biographie | L’Essence de Chanel</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="../css/variables.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="icon" type="image/png" href="../assets/logo_and_icons/coco_logo.png" />
+        <script src="https://kit.fontawesome.com/152b36a094.js" crossorigin="anonymous"></script>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Hurricane&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+        </style>
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-xxl shadow-sm sticky-top" id="navbar-id">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold fs-2 text-uppercase ms-lg-5" href="#">Chanel</a>
+
+                <button
+                    class="navbar-toggler rounded p-2"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link d-flex align-items-center justify-content-center gap-1 px-3 py-2 fw-semibold"
+                                href="../home.html"
+                                >Accueil</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link d-flex align-items-center justify-content-center gap-1 px-3 py-2 fw-semibold active"
+                                href="biography.html"
+                                >Biographie</a
+                            >
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle d-flex align-items-center justify-content-center gap-1 px-3 py-2 fw-semibold"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown">
+                                Ses œuvres
+                            </a>
+                            <ul class="dropdown-menu text-center text-gold">
+                                <li><a class="dropdown-item" href="archievements.html#parfums">Parfums</a></li>
+                                <li><a class="dropdown-item" href="archievements.html#defiles">Défilés</a></li>
+                                <li><a class="dropdown-item" href="archievements.html#accessoire">Accessoires</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="archievements.html#petite-robe-noire"
+                                        >La Petite Robe Noire</a
+                                    >
+                                </li>
+                                <li><a class="dropdown-item" href="archievements.html#sac-255">Le Sac 2.55</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle d-flex align-items-center justify-content-center gap-1 px-3 py-2 fw-semibold"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown">
+                                Histoire
+                            </a>
+                            <ul class="dropdown-menu text-center text-gold">
+                                <li><a class="dropdown-item" href="history.html#Timeline">Timeline</a></li>
+                                <li><a class="dropdown-item" href="history.html#empire">L'Empire</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="history.html#accordionEmpire"
+                                        >Les piliers de l'empire Chanel</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="history.html#muse_of_chanel">Les muses de Chanel</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="history.html#accordionRessources"
+                                        >Ressources utiles</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link d-flex align-items-center justify-content-center gap-1 px-3 py-2 fw-semibold"
+                                href="gallery.html"
+                                >Galerie</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <button
+                                type="button"
+                                class="btn text-white link color-a nav-link d-flex align-items-center justify-content-center gap-1 px-3 py-2 fw-semibold col-12"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal2">
+                                <span class="text-nowrap">À propos</span>
+                            </button>
+                        </li>
+                        <li class="nav-item d-flex align-items-center ms-3">
+                            <div class="form-check form-switch m-0">
+                                <input class="form-check-input" type="checkbox" id="themeSwitch" />
+                                <label class="form-check-label text-white ms-2" for="themeSwitch">
+                                    <small id="themeLabel" class="text-gold">Changer le thème</small>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- BREADCRUMB -->
+        <header class="mt-0 mb-0">
+            <nav aria-label="breadcrumb" class="py-2 breadcumb-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8 align-middle">
+                            <ol class="breadcrumb mb-0 mt-2 fs-4">
+                                <li class="breadcrumb-item">
+                                    <a href="../home.html" class="text-decoration-none fs-4">Accueil</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Biographie</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="page-title py-4">
+            <div class="container">
+                <h1 class="display-4 fw-bold text-gold">Biographie</h1>
+            </div>
+        </section>
+
+        <section class="container my-3">
+            <div class="row">
+                <!--accordeon-->
+                <div class="col-md-12 col-lg-6 col-12 col-xxl-6 mx-1">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Quel est le vrai nom de Coco Chanel ?
+                                </button>
+                            </h2>
+                            <div
+                                id="flush-collapseOne"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Le vrai nom de Coco Chanel est Gabrielle Chasnel. Âgée de vingt-quatre ans, elle se
+                                    produit en spectacle devant les officiers qui la surnomment « Coco », parce qu'elle
+                                    a pour habitude de chanter Qui qu'a vu Coco dans l'Trocadéro ?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Quelles sont ses plus grandes créations?
+                                </button>
+                            </h2>
+                            <div
+                                id="flush-collapseTwo"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    La petite robe noire, la veste en tweed, le parfum Chanel, les bijoux fantaisies.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Comment a-t-elle commencé dans la mode?
+                                </button>
+                            </h2>
+                            <div
+                                id="flush-collapseThree"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Des hommes ont financé ses projets et l'ont fait découvrir la vie mondaine. Elle
+                                    s'est mise à créer des chapeaux simples, puis elle a augmenté la varieté de ses
+                                    créations.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour"
+                                    aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    Où vivait Coco Chanel?
+                                </button>
+                            </h2>
+                            <div
+                                id="flush-collapseFour"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Elle a vécu la plus grande partie de sa vie en France.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFive"
+                                    aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    Où est né Coco Chanel?
+                                </button>
+                            </h2>
+                            <div
+                                id="flush-collapseFive"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Elle est née à l'hospice de Samur en France.
+                                    <iframe
+                                        title="hospice de samur"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60288218.23933646!2d-94.90783244324936!3d22.739358904177823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4807f56d85fd4509%3A0xf015afe0c51c3b88!2sHospice%20de%20Saumur!5e0!3m2!1sen!2sca!4v1763339048403!5m2!1sen!2sca"
+                                        width="600"
+                                        height="450"
+                                        style="border: 0"
+                                        allowfullscreen=""
+                                        loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"
+                                        class="rounded-4 shadow"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseSix"
+                                    aria-expanded="false"
+                                    aria-controls="flush-collapseSix">
+                                    Influence de Chanel dans la mode
+                                </button>
+                            </h2>
+
+                            <div
+                                id="flush-collapseSix"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <section class="influence-section">
+                                        <h4 class="text-center mb-4">Impact visuel estimé</h4>
+
+                                        <!-- 1 - Haute couture -->
+                                        <div class="mb-4">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="text-gold">Haute couture</span>
+                                                <span class="text-gold fw-bold">100%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar gold-bar progress-100"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- 2 - Parfums -->
+                                        <div class="mb-4">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="text-gold">Parfums</span>
+                                                <span class="text-gold fw-bold">90%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar gold-bar progress-90"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- 3 - Accessoires -->
+                                        <div class="mb-4">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="text-gold">Accessoires</span>
+                                                <span class="text-gold fw-bold">85%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar gold-bar progress-85"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- 4 - Design minimaliste -->
+                                        <div class="mb-2">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="text-gold">Design minimaliste</span>
+                                                <span class="text-gold fw-bold">80%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar gold-bar progress-80"></div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--carousel-->
+                <div class="col-lg-5 col-md-12 col-12 col-xxl-5 mx-1 my-3">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleAutoplaying"
+                                data-bs-slide-to="0"
+                                class="active"></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleAutoplaying"
+                                data-bs-slide-to="1"></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleAutoplaying"
+                                data-bs-slide-to="2"></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleAutoplaying"
+                                data-bs-slide-to="3"></button>
+                        </div>
+                        <div class="carousel-inner custom-carousel">
+                            <div class="carousel-item active bio-carousel">
+                                <img
+                                    src="../assets/picture/Gabrielle_Chanel_en_mariniere_enfant.jpg"
+                                    class="d-block w-100 bio-image"
+                                    alt="Gabrielle Chasnel enfant" />
+                                <div class="carousel-caption d-none d-md-block p-2 rounded-3 mb-2">
+                                    <h5>Enfance</h5>
+                                    <p class="m-0 text-white">Gabrielle Chasnel dans sa jeunesse</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item bio-carousel">
+                                <img
+                                    src="../assets/picture/Gabrielle_Chanel_glass.jpg"
+                                    class="d-block w-100 bio-image"
+                                    alt="Gabrielle Chasnel" />
+                                <div class="carousel-caption d-none d-md-block p-2 rounded-3 mb-2">
+                                    <h5>Portrait</h5>
+                                    <p class="m-0 text-white">Gabrielle Chasnel, icône de style</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item bio-carousel">
+                                <img
+                                    src="../assets/picture/Coco_Chanel_in_Los_Angeles,_1931_assise.jpg"
+                                    class="d-block w-100 bio-image"
+                                    alt="Coco Chanel à Los_Angeles" />
+                                <div class="carousel-caption d-none d-md-block p-2 rounded-3 mb-2">
+                                    <h5>Los Angeles 1931</h5>
+                                    <p class="m-0 text-white">Coco Chanel lors de sa visite américaine</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item bio-carousel">
+                                <img
+                                    src="../assets/picture/coco_iconic_info_bae.avif"
+                                    class="d-block w-100 bio-image"
+                                    alt="Coco Chanel souriante" />
+                                <div class="carousel-caption d-none d-md-block p-2 rounded-3 mb-2">
+                                    <h5>Sourire légendaire</h5>
+                                    <p class="m-0 text-white">L'élégance incarnée</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--scrollspy-->
+        <section class="container mt-3">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4 mb-4">
+                    <div class="scrollspy-wrapper">
+                        <div id="list-example" class="list-group">
+                            <a class="list-group-item list-group-item-action text-gold border-gold" href="#list-item-1"
+                                >Enfance</a
+                            >
+                            <a class="list-group-item list-group-item-action text-gold border-gold" href="#list-item-2"
+                                >Etudes</a
+                            >
+                            <a class="list-group-item list-group-item-action text-gold border-gold" href="#list-item-3"
+                                >La femme de fer</a
+                            >
+                            <a class="list-group-item list-group-item-action text-gold border-gold" href="#list-item-4"
+                                >De nombreux amants</a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-8 col-xxl-8">
+                    <div
+                        data-bs-spy="scroll"
+                        data-bs-target="#list-example"
+                        data-bs-offset="0"
+                        class="scrollspy-example"
+                        tabindex="0">
+                        <h3 id="list-item-1" class="text-gold">Enfance</h3>
+                        <p>
+                            Née le 19 août 1883, à 4 heures du soir, à l'hospice de Saumur tenu par les sœurs de la
+                            Providence, Gabrielle Chasnel est issue d'une lignée de marchands forains cévenols, de
+                            Ponteils-et-Brésis près d'Alès. Très peu d'éléments sont connus sur l'enfance de Gabrielle
+                            Chasnel, dont elle a très peu parlé, si ce n'est qu'elle se mura dans la solitude et ne se
+                            sentit pas aimée par son père aigri, qui reprochait à son épouse chétive et à ses enfants de
+                            l'avoir empêché de mener la vie de succès, dont il rêvait. Cela n'empêcha pas Gabrielle de
+                            vouer une véritable adoration à ce père bourru, volage et souvent absent. La mère de
+                            Gabrielle meurt le 6 février 1895, à Brive-la-Gaillarde, à l'âge de 31 ans, épuisée par ses
+                            grossesses successives, la tuberculose et le travail qu'elle effectuait sur les marchés de
+                            Paris dans le froid. La jeune fille n'a alors que douze ans.
+                        </p>
+                        <a href="#" onclick="history.back()" class="text-gold go-back-btn">Retour en arrière</a>
+                        <div class="return-to-live">
+                            <a href="#list-example" class="text-gold">Retourner aux étapes de sa vie</a>
+                        </div>
+                        <h3 id="list-item-2" class="text-gold">Etudes</h3>
+                        <p>
+                            À 18 ans, pour échapper à un mariage forcé, et sans pour autant aspirer au noviciat,
+                            Gabrielle Chasnel se rend chez sa tante paternelle Louise Costier à Moulins et s'inscrit
+                            chez les chanoinesses de Saint-Augustin de la congrégation Notre-Dame, où elle se
+                            perfectionne dans le métier de couseuse. N'ayant pas les moyens de payer les frais de
+                            scolarité, elle y est admise avec le statut de pupille et elle y est traitée différemment
+                            des élèves plus riches.
+                        </p>
+                        <a href="#" onclick="history.back()" class="text-gold go-back-btn">Retour en arrière</a>
+                        <div class="return-to-live">
+                            <a href="#list-example" class="text-gold">Retourner aux étapes de sa vie</a>
+                        </div>
+                        <h3 id="list-item-3" class="text-gold">La femme de fer</h3>
+                        <p>
+                            Le caractère de Coco est si fort qu’on la surnomme la femme de fer. Elle a ses idées et ne
+                            fait aucun compromis, malgré l’avis des autres. Elle est aussi une solitaire dans l’âme,
+                            mais une solitaire ambitieuse. Ses proches collaborateurs s’entendent pour dire qu’elle
+                            était colérique et entêtée.Outre l’élégance qui est sa carte de visite, Chanel croit à la
+                            perfection. Toute sa vie, elle travaillera sans compter ses heures, logeant au-dessus de son
+                            atelier.
+                        </p>
+                        <a href="#" onclick="history.back()" class="text-gold go-back-btn">Retour en arrière</a>
+                        <div class="return-to-live">
+                            <a href="#list-example" class="text-gold">Retourner aux étapes de sa vie</a>
+                        </div>
+                        <h3 id="list-item-4" class="text-gold">De nombreux amants</h3>
+                        <p>
+                            Certains diront que Coco a connu le succès grâce aux hommes. C’est le paradoxe, mais ce
+                            serait la vérité. Ce sont ses nombreux amants qui l’auraient fait évoluer dans les hautes
+                            sphères de la société et cheminer vers la réussite. Parfois entretenue, parfois financée par
+                            les hommes, même si elle n’en a épousé aucun, ceux-ci ont été importants dans son ascension
+                            vers le sommet, elle qui avait pour concurrents des hommes comme Christian Dior. Elle meurt
+                            dans sa suite du Ritz à Paris en 1971 à l’âge de 87 ans.
+                        </p>
+                        <a href="#" onclick="history.back()" class="text-gold go-back-btn">Retour en arrière</a>
+                        <div class="return-to-live">
+                            <a href="#list-example" class="text-gold">Retourner aux étapes de sa vie</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="mt-4">
+            <div class="row footer-color px-5 pt-5 text-center">
+                <div class="col-md-12 col-lg-12 col-xl-2"></div>
+                <div class="col-md-3 col-lg-3 col-xl-2 nav-footer d-none d-lg-block">
+                    <h3 class="title_footer">Œuvre</h3>
+                    <ul class="list-unstyled">
+                        <li class="link">
+                            <a class="text-decoration-none color-a" href="archievements.html#parfums">Parfums</a>
+                        </li>
+                        <li class="link">
+                            <a class="text-decoration-none color-a" href="archievements.html#defiles">Défilés</a>
+                        </li>
+                        <li class="link">
+                            <a class="text-decoration-none color-a" href="archievements.html#accessoire">Accessoires</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-2 nav-footer d-none d-lg-block">
+                    <h3 class="title_footer">Histoire</h3>
+                    <ul class="list-unstyled">
+                        <li class="link">
+                            <a class="text-decoration-none color-a" href="history.html#Timeline">Timeline</a>
+                        </li>
+                        <li class="link">
+                            <a class="text-decoration-none color-a" href="history.html#empire">L'empire</a>
+                        </li>
+                        <li class="link">
+                            <a class="text-decoration-none color-a" href="history.html#accordionEmpire"
+                                >Les piliers de l'empire</a
+                            >
+                        </li>
+                        <li class="link">
+                            <a class="text-decoration-none color-a" href="history.html#muse_of_chanel"
+                                >Les muses de Chanel</a
+                            >
+                        </li>
+                        <li class="link">
+                            <a class="text-decoration-none color-a" href="history.html#accordionRessources"
+                                >Ressources utiles</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-2 nav-footer d-none d-lg-block">
+                    <h3 class="title_footer">Chanel</h3>
+                    <ul class="list-unstyled">
+                        <li class="link">
+                            <a class="text-decoration-none color-a" href="../home.html">Accueil</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none color-a" href="gallery.html">Galerie</a>
+                        </li>
+                        <li class="link">
+                            <a class="text-decoration-none color-a" href="biography.html">Biographie</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row col-md-12 col-12 col-lg-3 col-xl-2 nav-footer">
+                    <h3 class="title_footer text-center text-lg-start">Suivez-nous</h3>
+                    <div class="col-md-12 p-2 nav-footer">
+                        <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                            <a href="#"><i class="fa-brands fa-facebook fa-xl color-reseau"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram fa-xl color-reseau"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter fa-xl color-reseau"></i></a>
+                            <a href="#"><i class="fa-brands fa-tiktok fa-xl color-reseau"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 div-nous nav-footer text-center text-lg-start">
+                        <!-- Button trigger modal -->
+                        <button
+                            type="button"
+                            class="btn col-md-5 col-3 text-white link color-a text-center text-lg-start"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal2">
+                            <span class="text-nowrap">À propos</span>
+                        </button>
+                        <!-- Modal -->
+                        <div
+                            class="modal modal-lg fade"
+                            id="exampleModal2"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel2"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5 text-cente text-gold" id="exampleModalLabel2">
+                                            À propos
+                                        </h1>
+                                        <button
+                                            type="button"
+                                            class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <h3 class="text-gold">Qui sommes-nous?</h3>
+                                            <div class="col-md-6 col-12 mt-2">
+                                                <div class="card div-nous">
+                                                    <img
+                                                        class="card-img-top img-nous"
+                                                        src="../assets/picture/patricelie_about_us.jpg"
+                                                        alt="Patricelie" />
+                                                    <div class="card-body">
+                                                        <p class="card-text">
+                                                            Je suis
+                                                            <span class="text-gold">Patricelie Njoh Ngueng</span>. Élève
+                                                            en Techniques de l'informatique au Cégep de
+                                                            Saint-Jean-sur-Richelieu pour la session Automne 2025 et
+                                                            <span class="text-gold">co-conceptrice de ce site web</span
+                                                            >. N’hésitez pas à me contacter pour vos commentaires ou
+                                                            questions:
+                                                        </p>
+                                                        <a
+                                                            class="text-decoration-none text-gold"
+                                                            href="mailto:contact@example.com"
+                                                            >2519567&#64;cstjean.qc.ca</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-12 mt-2">
+                                                <div class="card div-nous">
+                                                    <img
+                                                        class="card-img-top img-nous"
+                                                        src="../assets/picture/jessica_about_us.jpg"
+                                                        alt="Jessica" />
+                                                    <div class="card-body">
+                                                        <p class="card-text">
+                                                            Je suis
+                                                            <span class="text-gold"
+                                                                >Jessica Karelle Fanguem Tchikapa</span
+                                                            >. Élève en Techniques de l'informatique au Cégep de
+                                                            Saint-Jean-sur-Richelieu pour la session Automne 2025 et
+                                                            <span class="text-gold">co-conceptrice de ce site web</span>
+                                                            .N’hésitez pas à me contacter pour vos commentaires ou
+                                                            questions:
+                                                        </p>
+                                                        <a
+                                                            class="text-decoration-none text-gold"
+                                                            href="mailto:contact@example.com"
+                                                            >2551439@cstjean.qc.ca</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <h2 class="text-gold text-nowrap">Pourquoi avoir choisi Chanel ?</h2>
+                                            <p>
+                                                Cette page a été créée pour retracer le parcours de Gabrielle Chasnel.
+                                                Figure emblématique de l’élégance et du raffinement, elle a révolutionné
+                                                l’univers de la mode. Nous espérons que cette présentation vous donnera
+                                                envie d’explorer plus en profondeur l’héritage de Chanel.
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                Fermer
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 div-nous nav-footer text-center text-lg-start">
+                        <!-- Button trigger modal -->
+                        <button
+                            type="button"
+                            class="btn col-md-5 col-3 text-white link color-a text-center text-lg-start"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <span>Sources</span>
+                        </button>
+                        <!-- Modal -->
+                        <div
+                            class="modal modal-lg fade"
+                            id="exampleModal"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Sources</h1>
+                                        <button
+                                            type="button"
+                                            class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3 class="p-2 text-gold display-6">Biographie</h3>
+                                        <p class="lead">
+                                            Wikipedia, «Coco Chanel», consulté le 09 novembre 2025,
+                                            <a
+                                                href="https://fr.wikipedia.org/wiki/Coco_Chanel"
+                                                class="text-gold text-decoration-none"
+                                                >https://fr.wikipedia.org/wiki/Coco_Chanel</a
+                                            >
+                                        </p>
+                                        <p class="lead">
+                                            BORBONNAIS, L. (2025, 15 Juin). «Une femme forte et ambitieuse»: Coco
+                                            Chanel, la dame de fer de la mode. Le journal de montréal.
+                                            <a
+                                                href="https://www.journaldemontreal.com/2025/06/15/biographie-coco-chanel-la-grande-dame-enigmatique"
+                                                class="text-gold text-decoration-none"
+                                                >https://www.journaldemontreal.com/2025/06/15/biographie-coco-chanel-la-grande-dame-enigmatique</a
+                                            >
+                                        </p>
+                                        <h3 class="p-2 mt-4 text-gold display-6">Images - Page Biographie</h3>
+                                        <h5 class="mt-2 text-gold">Carousel Biographie</h5>
+                                        <p class="lead">
+                                            *Gabrielle Chasnel enfant en marinière : Radio France
+                                            <a
+                                                href="https://www.radiofrance.fr/franceculture/podcasts/l-annee-1913/1er-septembre-1913-melle-chanel-lance-sa-mariniere-3567660"
+                                                class="text-gold text-decoration-none"
+                                                >https://www.radiofrance.fr/franceculture/podcasts/l-annee-1913/1er-septembre-1913-melle-chanel-lance-sa-mariniere-3567660</a
+                                            >
+                                        </p>
+                                        <p class="lead">
+                                            *Gabrielle Chasnel avec lunettes : Wikipédia
+                                            <a
+                                                href="https://en.wikipedia.org/wiki/Coco_Chanel"
+                                                class="text-gold text-decoration-none"
+                                                >https://en.wikipedia.org/wiki/Coco_Chanel</a
+                                            >
+                                        </p>
+                                        <p class="lead">
+                                            *Coco Chanel Los Angeles 1931 : Historia
+                                            <a
+                                                href="https://www.historia.fr/personnages-historiques/biographies/gabrielle-chanel-delivre-les-corps-et-les-codes-2068348"
+                                                class="text-gold text-decoration-none"
+                                                >https://www.historia.fr/personnages-historiques/biographies/gabrielle-chanel-delivre-les-corps-et-les-codes-2068348</a
+                                            >
+                                        </p>
+                                        <p class="lead">
+                                            *Coco Chanel sourire iconique : Vogue
+                                            <a
+                                                href="https://www.vogue.fr/communaute/wiki-de-la-mode/articles/coco-chanel-le-chic-tout-simplement/20593"
+                                                class="text-gold text-decoration-none"
+                                                >https://www.vogue.fr/communaute/wiki-de-la-mode/articles/coco-chanel-le-chic-tout-simplement/20593</a
+                                            >
+                                        </p>
+                                        <h3 class="p-2 mt-4 text-gold display-6">Ressources consultées</h3>
+                                        <p class="lead">
+                                            *Site officiel Chanel :
+                                            <a href="https://www.chanel.com" class="text-gold text-decoration-none"
+                                                >https://www.chanel.com</a
+                                            >
+                                        </p>
+                                        <p class="lead">
+                                            *Vogue :
+                                            <a href="https://www.vogue.com" class="text-gold text-decoration-none"
+                                                >https://www.vogue.com</a
+                                            >
+                                        </p>
+                                        <p class="lead">
+                                            *Wikipedia Chanel :
+                                            <a
+                                                href="https://fr.wikipedia.org/wiki/Coco_Chanel"
+                                                class="text-gold text-decoration-none"
+                                                >https://fr.wikipedia.org/wiki/Coco_Chanel</a
+                                            >
+                                        </p>
+                                        <p class="lead">
+                                            *Harper's Bazaar :
+                                            <a
+                                                href="https://www.harpersbazaar.com"
+                                                class="text-gold text-decoration-none"
+                                                >https://www.harpersbazaar.com</a
+                                            >
+                                        </p>
+                                        <p class="lead">
+                                            *WWD (Women's Wear Daily) :
+                                            <a href="https://wwd.com" class="text-gold text-decoration-none"
+                                                >https://wwd.com</a
+                                            >
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            Fermer
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-12 col-xl-2"></div>
+                <div class="text-white col-md-12 col-12 text-center pt-3">
+                    <p class="fst-italic m-0 color-a">L'essence de Chanel</p>
+                    <p class="fst-italic m-0 color-a">© 2025. Tous les droits réservés</p>
+                    <p class="color-a">Site créé dans le cadre d'un projet scolaire</p>
+                </div>
+            </div>
+        </footer>
+        <a
+            href="#top"
+            class="back-to-top position-fixed bottom-0 start-0 rounded-circle z-3 d-flex align-items-center justify-content-center text-decoration-none m-4"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Retour en haut">
+            <i class="fa-solid fa-arrow-up-long fs-5"></i>
+        </a>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+            defer></script>
+        <script src="../js/script.js" defer></script>
+    </body>
+</html>

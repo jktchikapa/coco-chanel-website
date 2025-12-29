@@ -1,0 +1,81 @@
+@media (max-width: 1024px) {
+    nav {
+        max-width: 100%;
+        width: 100%;
+    }
+    .custom-carousel .carousel-item img {
+        height: 60vh;
+    }
+
+    .custom-carousel .carousel-caption {
+        padding: 1.2rem 1.5rem;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+
+    scroll-container .card {
+        width: 250px;
+        height: 400px;
+    }
+    .timeline-item .timeline-card {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .coco-image_black-dress {
+        margin-left: 1.2rem;
+    }
+    @media (max-width: 768px) {
+        body {
+            padding: 0.3rem;
+        }
+        nav {
+            max-width: 100%;
+            width: 100%;
+        }
+        .timeline-new::before {
+            left: 20px;
+        }
+
+        .timeline-new .timeline-item::before {
+            left: 20px;
+        }
+
+        .timeline-new .timeline-item {
+            padding-left: 50px;
+        }
+        .hero_image {
+            width: 100%;
+            max-width: 100%;
+        }
+        .btn-glass {
+            margin: auto;
+        }
+        .biography-btn {
+            height: 3.5rem;
+            display: flex;
+            white-space: nowrap;
+        }
+        .scrollspy-wrapper {
+            top: 70px;
+            position: static;
+        }
+        .bio-image {
+            height: 350px;
+        }
+
+        .bio-carousel .carousel-caption h5 {
+            font-size: 0.9rem;
+        }
+
+        .bio-carousel .carousel-caption p {
+            font-size: 0.75rem;
+        }
+        .offcanvas-start {
+            width: 100% !important;
+        }
+    }
+}
